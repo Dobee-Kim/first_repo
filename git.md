@@ -39,10 +39,9 @@
     - 물리적 공간이 아닌 가상의 공간
 - Repository
     - 변경사항이 버전이력으로 저장되는 영역
----
-- `Repository`
     - 버전 이력과 파일들이 영구적으로 저장되는 영역
     - 모든 버전과 변경 이력이 기록됨
+---
 - `Commit`
     - 변경된 파일들을 저장하는 행위이며, 마치 사진을 찍듯이 기록한다 하여 'snapshot'이라고도 함
 
@@ -83,9 +82,11 @@ $ git commit -m '메시지'
 - `git config`
     - 레포지토리 사용자와 깃 커밋을 시작하기 위해선 이름과 이메일 주소를 적어야 함
 ``` git
-$ git config -- global use.name "이름" 
-$ git config -- global use.email "이메일 주소" 
+$ git config -- global user.name "이름" 
+$ git config -- global user.email "이메일 주소" 
 ```
 - `git log` : 커밋 히스토리를 보는 명령어
 
-
+---
+- git은 로컬 저장소 내 모든 파일의 '변경사항'을 감시하고 있다
+- 변경점이 조금이라도 생기면 working directory에 등록함
